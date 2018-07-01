@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Crystal Collector</title>
+
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+
+		<!-- Will not play in Chrome. -->
+		<audio autoplay=true src="assets/sounds/WoodsDarkerThanNight.mp3" type="audio"></audio>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1>Crystal Collector</h1>
+		</div>
+
+		<div class="instructions">
+			<h3>How To Play</h3>
+			</br>
+			<ol>
+				<li>You will be given a random number at the start of the game. (<span>"Number To Get"</span>)</li>
+				<li>
+					There are four crystals below.
+					<ul>
+						<li id="blue">Sapphire</li>
+						<li id="green">Emerald</li>
+						<li id="red">Ruby</li>
+						<li id="yellow">Citrine</li>
+					</ul>
+					By clicking on a crystal, you will add a specific amount of points to <span>"Your Total Score"</span>.
+				</li>
+                <li>You win the game by matching <span>"Your Total Score"</span> to <span>"Number To Get"</span>.</li>
+                <li>You lose the game if <span>"Your Total Score"</span> goes above <span>"Number To Get"</span>.</li>
+				<li>The value of each crystal is hidden from you until you click on it.</li>
+				<li>Each time when the game starts, the game will change the values of each crystal.</li>
+			</ol>
+		</div>
+
+		<div class="numberToGet">
+			<h2>
+				Number To Get:
+				<span id="randomNumber"></span>
+			</h2>
+		</div>
+
+		<div class="totalScore">
+			<h2>
+				Your Total Score:
+				<span id="finalTotal"></span>
+			</h2>
+		</div>
+
+		<div class="crystals">
+			<img src="assets/images/crystal_blue.jpg" class=crystalImage id="one" alt="Blue Crystal">
+			<img src="assets/images/crystal_green.jpg" class=crystalImage id="two" alt="Green Crystal">
+			<img src="assets/images/crystal_red.jpg" class=crystalImage id= "three" alt="Red Crystal">
+			<img src="assets/images/crystal_yellow.jpg" class=crystalImage id= "four" alt="Yellow Crystal">
+		</div>
+
+		<div class="counter">
+			<h2>
+				Wins:
+				<span id= "numberWins"></span>
+				</br>
+				Losses:
+				<span id= "numberLosses"></span>
+			</h2>
+		</div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>			
+
+		<div class="footer">
+            &#169 2018 Kathrin Byard
+			<br>
+			Child of Light and its associated images and music are the property of Ubisoft Entertainment
+			<br>
+			Use of Child of Light content complies with Ubisoft Entertainment's guidelines for <a href="https://support.ubi.com/en-GB/faqs/000025598/Posting-copyrighted-Ubisoft-material">Posting Copyrighted Ubisoft Material</a>
+		</div>
+	</body>
+</html>
